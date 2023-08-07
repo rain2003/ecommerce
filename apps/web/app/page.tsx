@@ -1,10 +1,7 @@
-import { Button, Header } from "ui";
+import { Button, Header , Appbar , Landing , Signin , Signup } from "ui";
 
 export default function Page() {
-  return (
-    <>
-      <Header text="Web" />
-      <Button />
-    </>
-  );
+  return <div>
+    <Appbar/>
+  </div>
 }
