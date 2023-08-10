@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react"
+import  React from "react"
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
@@ -15,7 +15,7 @@ export const Signin=()=>{
         display : 'flex',
         justifyContent : 'center',
         padding : 20,
-        height : "400px",
+        height : "240px",
     }}>
     <Card variant="outlined" style={{
         width : '30%',
@@ -28,10 +28,10 @@ export const Signin=()=>{
             <TextField id="outlined-basic" label="Password" variant="outlined" />
         
         <Button variant="contained" style={{
-            marginTop : '10px',
+            marginTop : '30px',
             width : 'fit-content'
         }}
-        >Sign Up</Button>
+        >Sign in</Button>
     </Card>
     </div>
     </div>

@@ -1,26 +1,31 @@
+"use client";
 import React from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
-
-/// This is the landing page. You need to add a link to the login page here.
-/// Maybe also check from the backend if the user is already logged in and then show them a logout button
-/// Logging a user out is as simple as deleting the token from the local storage.
+import { useNavigate } from "react-router-dom";
 export const  Landing =()=> {
+    const navigate = useNavigate();
     return <center>
-    <h1 style={{ marginTop: "200px"}} >Welcome to course selling website!</h1>
+    <h1 style={{ marginTop: "150px"}} >Welcome to E-commerce website!</h1>
     <Card variant="outlined" style={{
         width : '40%',
         display : 'flex',
         flexDirection: 'column-reverse',
-        
+
     }}>
         <Button variant="contained" style={{
             marginTop : '30px',
         }}
+        onClick={()=>{
+            navigate("/login")
+        }}
         >Sign In</Button>
         <Button variant="contained" style={{
             marginTop : '30px',
+        }}
+        onClick={()=>{
+            navigate("/register")
         }}
         >Sign Up</Button>
     </Card>
